@@ -69,6 +69,10 @@
 		<div class="row">
 			<div class="col">
 				<?php
+
+					//arquivo de conexão
+					include('config.php');
+					
 					switch (@$_REQUEST['page']) {
 
 						// funcionário
