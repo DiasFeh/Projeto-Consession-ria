@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Concessionária</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><!-chama o css do bootstrap-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><!--chama o css do bootstrap-->
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark"> <!-- bg troca nav para dark e data-bs-theme="dark" faz as coisas ficar clara (O inverso)-->
