@@ -13,8 +13,6 @@
         print "<tr>";
         print "<th>#</th>";
         print "<th>Nome</th>";
-        print "<th>E-mail</th>";
-        print "<th>Telefone</th>";
         print "<th>Ações</th>";
         print "</tr>";
 
@@ -22,8 +20,6 @@
             print "<tr>";
             print "<td>".$row->id_marca."</td>";
             print "<td>".$row->nome_marca."</td>";
-            print "<td>".$row->email_marca."</td>";
-            print "<td>".$row->telefone_marca."</td>";
             print "<td>";
 
             print "<button class='btn btn-success' onclick=\"

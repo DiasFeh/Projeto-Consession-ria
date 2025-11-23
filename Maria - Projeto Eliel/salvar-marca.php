@@ -2,11 +2,9 @@
 	switch ($_REQUEST['acao']) {
 		case 'cadastrar':
 			$nome = $_POST['nome_marca'];
-			$email = $_POST['email_marca'];
-			$telefone = $_POST['telefone_marca'];
 
-			$sql = "INSERT INTO marca (nome_marca, email_marca, telefone_marca)
-			VALUES ('{$nome}', '{$email}', '{$telefone}')";
+			$sql = "INSERT INTO marca (nome_marca)
+			VALUES ('{$nome}')";
 
 			$res = $conn->query($sql);
 
@@ -22,13 +20,9 @@
 		
 		case 'editar':
             $nome = $_POST["nome_marca"];
-            $email = $_POST["email_marca"];
-            $telefone = $_POST["telefone_marca"];
 
             $sql = "UPDATE marca SET 
-                        nome_marca='{$nome}', 
-                        email_marca='{$email}', 
-                        telefone_marca='{$telefone}' 
+                        nome_marca='{$nome}'
                     WHERE id_marca=".$_REQUEST["id_marca"];
 
             $res = $conn->query($sql);

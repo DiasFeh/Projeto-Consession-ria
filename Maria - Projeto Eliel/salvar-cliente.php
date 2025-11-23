@@ -5,9 +5,11 @@
 			$cpf = $_POST['cpf_cliente'];
 			$email = $_POST['email_cliente'];
 			$telefone = $_POST['telefone_cliente'];
+			$endereco = $_POST['endereco_cliente'];
+			$dt_nasc = $_POST['dt_nasc_cliente'];
 
-			$sql = "INSERT INTO cliente (nome_cliente, cpf_cliente, email_cliente, telefone_cliente)
-			VALUES ('{$nome}', '{$cpf}', '{$email}', '{$telefone}')";
+			$sql = "INSERT INTO cliente (nome_cliente, cpf_cliente, email_cliente, telefone_cliente, endereco_cliente, dt_nasc_cliente)
+			VALUES ('{$nome}', '{$cpf}', '{$email}', '{$telefone}', '{$endereco}', '{$dt_nasc}')";
 
 			$res = $conn->query($sql);
 
@@ -27,15 +29,15 @@
             $email = $_POST["email_cliente"];
             $telefone = $_POST["telefone_cliente"];
             $endereco = $_POST["endereco_cliente"];
-            $dt_nasc = $_POST["dt_nass_cliente"];
+            $dt_nasc = $_POST["dt_nasc_cliente"];
 
             $sql = "UPDATE cliente SET 
                         nome_cliente='{$nome}', 
 						cpf_cliente='{$cpf}',
                         email_cliente='{$email}', 
-                        telefone_cliente='{$telefone}'
-						endereco_cliente='{$endereco}'
-						 
+                        telefone_cliente='{$telefone}',
+						endereco_cliente='{$endereco}',
+						dt_nasc_cliente='{$dt_nasc}'
 
                     WHERE id_cliente=".$_REQUEST["id_cliente"];
 

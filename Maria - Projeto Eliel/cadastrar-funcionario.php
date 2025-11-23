@@ -1,4 +1,4 @@
-<h1>Cadastrar Funcioário</h1>
+<h1>Cadastrar Funcionário</h1>
 <form action="?page=salvar-funcionario" method="POST">
 	<input type="hidden" name="acao" value="cadastrar"><!---->
 

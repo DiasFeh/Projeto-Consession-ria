@@ -1,6 +1,7 @@
 <h1>Cadastrar Cliente</h1>
+<!--o mais tranquilo dos campos-->
 <form action="?page=salvar-cliente" method="POST">
-	<input type="hidden" name="acao" value="cadastrar"><!---->
+	<input type="hidden" name="acao" value="cadastrar">
 
 	<div class="mb-3">
 		<label> Nome
